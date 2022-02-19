@@ -18,6 +18,12 @@ header {
     padding-top: 26px;
     padding-bottom: 25px;
 }
+.header-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 68.5%;
+}
 .header-logo {
     display: block;
     background-image: url(../images/logo.svg);
@@ -181,9 +187,14 @@ header {
     text-decoration: none;
     font-size: 14px;
     font-weight: 700;
-    padding: 20px 26px;
+    padding: 18px 25px;
     border-radius: 5px;
     text-transform: uppercase;
+    border: 1px solid #FBB731; 
+}
+.banner-link:hover {
+    background-color: transparent;
+    color: #FBB731;
 }
 .menu-header {
     display: flex;
@@ -266,6 +277,9 @@ header {
     gap: 10px;
     border-radius: 5px;
 }
+.menu-grid-btn:hover {
+    background-color: #F37335;
+}
 .menu-grid-text {
     font-size: 14px;
     font-weight: 700;
@@ -274,51 +288,66 @@ header {
 }
 .footer {
     background: #1E2F40;
-    color: #FAF9F9;
+    color: #FFFFFF;
     padding-top: 117px;
     padding-bottom: 106px;
+    margin-top: 140px;
 }
 .footer-box {
     display: flex;
     justify-content: space-between;
 }
-.logo {
+.footer-logo {
     width: 63px;
     height: 56px;
 }
-.item h2 {
+.footer-item {
+    flex: 0 0 auto;
+}
+.footer-item h2 {
     font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
-    margin-bottom: 12px;
+    margin-bottom: 19px;
+    margin-top: 0;
 }
-.item ul,
-.tel ul {
-    list-style-type: none;
-}
-.item li {
+.footer-list li {
     margin-bottom: 9px;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     color: #FAF9F9;
     line-height: 24px;
+    font-weight: 700;
 }
-.item a {
+.footer-list a {
     color: #DEDEDE;
     text-decoration: none;
-    font-size: 15px;
     font-weight: 400;
 }
-.item span {
+.footer-list a:hover {
+    color: #F37335;
+}
+.footer-item span {
     color: #DEDEDE;
     display: block;
     font-weight: 400;
     margin-bottom: 2px;
 }
-.tel ul {
+.footer-list-tel {
+    margin-top: 0;
+}
+.footer-list-tel a{
     font-size: 20px;
+    font-weight: 900;
     color: #FBB731;
 }
-.tel li {
+.footer-list-tel a:hover {
+    color: white;
+}
+.footer-list-tel li {
     margin-bottom: 12px;
+}
+.footer-list {
+    padding-left: 0;
+    list-style-type: none;
 }
